@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "obase=bestchol; ${WATER:-0} + ${STIR:-0}" | bc
+echo "Result in base bestchol: $(( ${WATER:-0} + ${STIR:-0} ))"
