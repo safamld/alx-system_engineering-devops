@@ -1,0 +1,2 @@
+#!/bin/bash
+echo "obase=bestchol; ${WATER:-0} + ${STIR:-0}" | bc
