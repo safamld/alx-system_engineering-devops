@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times
 occ=0
-until [ $count -ed 10 ]
+until [ $occ -eq 10 ]
 do
-	echo "Best School"
+        echo "Best School"
         (( occ++ ))
 done

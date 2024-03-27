@@ -9,10 +9,10 @@ occ=0
 
 while [ $occ -lt 10 ]
 do
-        if [ $count -eq 3 ]
+        if [ $occ -eq 3 ]
 	then
 		echo "bad luck"
-	elif [ $count -eq 7 ]
+	elif [ $occ -eq 7 ]
 	then
 		echo "good luck"
 	else

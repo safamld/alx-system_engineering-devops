@@ -7,7 +7,7 @@ occ=0
 
 while [ $occ -lt 10 ]
 do
-	if [ $count -eq 9]
+	if [ $occ -eq 9 ]
 	then
 		echo "Hi"
 	fi
