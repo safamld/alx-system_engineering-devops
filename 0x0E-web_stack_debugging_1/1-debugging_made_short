@@ -1,8 +1,7 @@
 #!/usr/bin/env bash                    
 # Fix Nginx listening on port 80
-
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 #restart nginx
 service nginx start
 #termination the first nginx process ID
-Kill "$(pgrep 'nginx' | head -1)"
+kill "$(pgrep 'nginx' | head -n 1)"
