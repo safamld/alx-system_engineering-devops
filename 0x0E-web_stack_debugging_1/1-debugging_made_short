@@ -1,0 +1,9 @@
+#!/usr/bin/env bash                    
+# Fix Nginx listening on port 80
+
+#creates a symbolic link between the  nginx configuration file and enabled sites dir 
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+#start nginx
+service nginx start
+#terminates the first nginx process ID
+kill "$(pgrep 'nginx' | head-l)"
