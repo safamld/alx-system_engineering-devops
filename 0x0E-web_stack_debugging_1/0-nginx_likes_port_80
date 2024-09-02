@@ -1,6 +1,7 @@
-#!/usr/bin/env bash                              
+#!/usr/bin/env bash                             
 # Fix Nginx listening on port 80
+
 apt-get update -y
 apt-get install -y nginx
 sudo service Nginx enable
-sudo service Nginx
+sudo service Nginx start
