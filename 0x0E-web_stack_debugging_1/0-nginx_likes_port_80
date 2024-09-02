@@ -1,18 +1,6 @@
 #!/usr/bin/env bash                              
 # Fix Nginx listening on port 80
-
-# Aller dans le dossier sites-enabled pour Nginx
-cd /etc/nginx/sites-enabled/ || exit
-
-# Supprimer le fichier par défaut
-rm -f default
-
-# Créer un lien symbolique vers le fichier default dans sites-available
-ln -s /etc/nginx/sites-available/default default
-
-# Tester la configuration Nginx avant le redémarrage
-nginx -t
-
-# Redémarrer Nginx avec la commande appropriée
-nginx -s reload
-
+apt-get update -y
+apt-get install -y nginx
+sudo service Nginx enable
+sudo service Nginx
